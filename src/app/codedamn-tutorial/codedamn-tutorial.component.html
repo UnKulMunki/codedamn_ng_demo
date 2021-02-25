@@ -1,0 +1,17 @@
+<!--CodeDamn-Tutorial-HTML -->
+<div style="text-align:center">
+  <h2>CodeDamn Tutorial</h2>
+
+  <h3>Test 2-way data binding</h3>
+  <!-- <input type="text" [value]="username" (input)="changeUsername( $event )" /> -->
+  <input type="text" [(ngModel)]="username" />
+  <br />
+  Hello: {{ username }}
+  <br />
+</div>
+
+<div>
+  <h3>Older Lesson:</h3>
+  Set a value here:
+  <input type="type" [value]="myVal" (keydown)="myFunct1($event)" />
+</div>

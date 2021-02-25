@@ -1,0 +1,20 @@
+<!-- Side-Menu-HTML -->
+
+<div redColored>This is a side menu place holder</div>
+
+<div>
+	<button (click)="countUp()"> + UP +</button>
+</div>
+<div *ngIf="counter % 2 != 0; let randomVariable">
+	Yep, it is {{randomVariable}}
+</div>
+
+Even of List:
+<ul *ngFor="let language of myFavLang; let i = index; let even = even;">
+	<li *ngIf="even"> -{{i}}- {{language.name}} : {{language.type}} </li>
+</ul>
+
+Odd of List:
+<ul *ngFor="let language of myFavLang; let odd = odd; let i = index;">
+	<li *ngIf="odd"> -{{i}}- {{language.name}} : {{language.type}} </li>
+</ul>
