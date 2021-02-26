@@ -21,6 +21,4 @@ export class ToolbarComponent implements OnInit {
     console.log("LightMenu: " + this.lightMenu);
   }
 
-
-
 }

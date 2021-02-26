@@ -5,8 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.css']
 })
-export class SidenavComponent implements OnInit {
 
+export class SidenavComponent implements OnInit {
+  // The code in this class drives the component's behavior.
   constructor() { }
 
   ngOnInit(): void {
