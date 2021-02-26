@@ -1,0 +1,5 @@
+<p>dashboard works!</p>
+
+<button (click)="toggleMenu()">=_=</button>
+<lang-list *ngIf="menuVisible; else listsOpen"></lang-list>
+<ng-template #listsOpen> Lists </ng-template>

@@ -5,17 +5,6 @@ import { Component } from "@angular/core";
   templateUrl: "./app.component.html"
 })
 export class AppComponent {
-  menuVisible = false;
-
-  toggleMenu() {
-    this.menuVisible = !this.menuVisible;
-  }
-
-  helloVisible = false;
-
-  toggleHello() {
-    this.helloVisible = !this.helloVisible;
-  }
 }
 
 /*

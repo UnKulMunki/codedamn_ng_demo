@@ -1,12 +1,11 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "side-menu",
-  templateUrl: "./side-menu.component.html"
+  selector: "lang-list",
+  templateUrl: "./langlist.component.html"
   // styles: ["div { font-weight: bolder; }"]
-  // styleUrls: ['./side-menu.component.css']
 })
-export class SideMenuComponent {
+export class LangListComponent {
   // The code in this class drives the component's behavior.
   constructor() {}
 
@@ -24,9 +23,8 @@ export class SideMenuComponent {
     { name: "delphi", type: "backend" }
   ];
 
-  counter = 0;
-
-  countUp() {
-    this.counter++;
-  }
+  // counter = 0;
+  // countUp() {
+  //   this.counter++;
+  // }
 }

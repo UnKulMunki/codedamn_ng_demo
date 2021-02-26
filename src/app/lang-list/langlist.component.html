@@ -1,0 +1,20 @@
+<!-- Language List -HTML -->
+
+<!-- 
+<div>
+	<button (click)="countUp()"> + UP +</button>
+</div>
+<div *ngIf="counter % 2 != 0; let randomVariable">
+	Yep, it is {{randomVariable}}
+</div> 
+-->
+
+List of Evens:
+<ul *ngFor="let language of myFavLang; let i = index; let evens = even;">
+	<li *ngIf="evens"> -{{i}}- {{language.name}} : {{language.type}} </li>
+</ul>
+
+List of Odds:
+<ul *ngFor="let language of myFavLang; let i = index; let odds = odd;">
+	<li *ngIf="odds"> -{{i}}- {{language.name}} : {{language.type}} </li>
+</ul>

@@ -1,24 +1,7 @@
+<app-toolbar></app-toolbar>
 <div align="center">
   <h1 redColored>Understanding Angular</h1>
 </div>
+<h2> Router Views </h2>
 
-<button (click)="toggleMenu()">=_=</button>
-<side-menu *ngIf="menuVisible; else oddClicked"></side-menu>
-<ng-template #oddClicked> Menu </ng-template>
-
-<div><button (click)="toggleHello()">Hello Toggle</button></div>
-<div *ngIf="helloVisible">
-  <hello-world></hello-world>
-  <hello-world-interpolation></hello-world-interpolation>
-  <hello-world-bindings></hello-world-bindings>
-  <hello-world-template></hello-world-template>
-  <hello-world-ngif></hello-world-ngif>
-  <hello-world-di></hello-world-di>
-</div>
-<codedamn-tutorial></codedamn-tutorial>
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
+<router-outlet></router-outlet>
