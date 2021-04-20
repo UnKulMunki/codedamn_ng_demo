@@ -1,4 +1,6 @@
+// THIS IS NOT BEING USED. It was implemented in the core app.component because of the need to access sidenav vars. 
 import { Component, OnInit } from '@angular/core';
+// import { SidenavComponent } from '../sidenav/sidenav.component';
 
 @Component({
   selector: 'app-toolbar',
@@ -11,8 +13,6 @@ export class ToolbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  opened: boolean;
 
   lightMenu = false;
 

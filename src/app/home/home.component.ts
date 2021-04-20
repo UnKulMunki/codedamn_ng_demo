@@ -18,10 +18,4 @@ export class HomeComponent implements OnInit {
     this.menuVisible = !this.menuVisible;
   }
 
-  helloVisible = false;
-
-  toggleHello() {
-    this.helloVisible = !this.helloVisible;
-  }
-
 }
