@@ -1,6 +1,29 @@
-<p>sidenav works!</p>
-<ol>
-    <ul><a href="localhost/home">Home</a></ul>
-    <ul><a href="localhost/dashboard">Dashboard</a></ul>
-    <ul><a href="localhost/codedamn-tutorial">Codedamn Tutorial</a></ul>
+<ol class="sidenav-menu">
+    <ul class="sidenav-menu-item">
+        <a (click)="closeSidenav()" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    </ul>
+    <ul class="sidenav-menu-item">
+        <a (click)="closeSidenav()" routerLink="/codedamn-tutorial" routerLinkActive="active">Codedamn Tutorial</a>
+    </ul>
+    <ul class="sidenav-menu-item">
+        <a (click)="closeSidenav()" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    </ul>
+
+    <ul class="sidenav-menu-item">
+        <a (click)="closeSidenav()" routerLink="/hello" routerLinkActive="active">Hello</a>
+    </ul>
+
+    <!-- <ul class="sidenav-menu-item" #appLogIn *ngIf="!loggedIn; else #appLogOut;" > -->
+    <ul class="sidenav-menu-item" #appLogIn>
+        <a (click)="closeSidenav()" routerLink="/login" routerLinkActive="active">Login</a>
+    </ul>
+<!-- 
+    <ul class="sidenav-menu-item" #appLogOut> 
+        <a (click)="closeSidenav()" routerLink="/login" routerLinkActive="active">Log Out</a>
+    </ul> 
+-->
+    <ul class="sidenav-menu-item">
+        <a (click)="closeSidenav()"routerLink="/admin" routerLinkActive="active">Admin</a>
+    </ul>
+
 </ol>

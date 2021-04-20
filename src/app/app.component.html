@@ -1,7 +1,50 @@
-<app-toolbar></app-toolbar>
-<div align="center">
-  <h1 redColored>Understanding Angular</h1>
-</div>
-<h2> Router Views </h2>
+<mat-sidenav-container>
+	<mat-sidenav #sidenav mode="over" [(opened)]="opened">
+		<app-sidenav></app-sidenav>
+	</mat-sidenav>
+	<mat-sidenav-content>
+    <!-- <app-toolbar> -->
+    <p>
+      <mat-toolbar color="primary">
+        <button mat-icon-button 
+          class="example-icon menu-icon" 
+          aria-label="Example icon-button with menu icon"
+          (click)="sidenav.toggle()" > 
+          <mat-icon>menu</mat-icon>
+        </button>
+  
+        <span class="example-spacer"></span>
+        <span style="display: block; text-align: center">Company Logo Here</span>
+        <span class="example-spacer"></span>
+        
+        <button mat-icon-button
+          class="example-icon identity-icon"
+          aria-label="Example icon-button with identity icon" >
+          <mat-icon>perm_identity</mat-icon>
+        </button>
+  
+        <button mat-icon-button
+          class="example-icon color-icon"
+          aria-label="Example icon-button with color choice icon"
+          (click)="invertMenuColor()" >
+          <mat-icon>invert_colors</mat-icon>
+        </button>
+  
+        <button mat-icon-button
+          class="example-icon logout-icon"
+          aria-label="Example icon-button with logout icon" 
+          (click)="appLogout()" >
+          <mat-icon>logout</mat-icon>
+        </button>
+      </mat-toolbar>
+    </p>
+    <!-- </app-toolbar> -->
+    <div align="center">
+      <h1 redColored>Understanding Angular</h1>
+    </div>
+    <!-- <button (click)="sidenav.toggle()">sidenav.toggle()</button> -->
+    <!-- <h2> Router Views </h2> -->
+    <router-outlet></router-outlet>
 
-<router-outlet></router-outlet>
+	</mat-sidenav-content>
+</mat-sidenav-container>

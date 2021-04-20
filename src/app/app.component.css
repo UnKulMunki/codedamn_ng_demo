@@ -1,0 +1,19 @@
+/** App Root CSS **/
+.mat-sidenav-container {
+  height: 100%;
+}
+
+.mat-sidenav {
+  width: 50%;
+
+  background-color: lightgrey;
+  color: rgb(0, 0, 0);
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  /* display: block; */
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

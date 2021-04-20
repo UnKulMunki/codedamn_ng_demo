@@ -1,0 +1,19 @@
+/** Side Nav CSS **/
+.mat-sidenav {
+    /** this is set in app.component.css where the module is originally imported **/
+}
+
+.sidenav-menu  {
+    padding-inline-start: 10px;
+}
+
+.sidenav-menu-item {
+    padding-inline-start: 10px;
+}
+
+a.active {
+    background-color: wheat;
+    color: rgb(68, 0, 255);
+    font-weight: bolder;
+    display: block;
+  }

@@ -10,6 +10,10 @@ export class SidenavComponent implements OnInit {
   // The code in this class drives the component's behavior.
   constructor() { }
 
+  closeSidenav(){
+    console.log( "Sidenav item clicked.");
+  }
+
   ngOnInit(): void {
   }
 
